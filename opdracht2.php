@@ -3,17 +3,25 @@
 
 <body>
     <?php
-function letters_tellen($woorden) {
-    foreach ($woorden as $woord) {
-        if 
-    }
+$woordenlijst = "kat hond olifant";
+$words  = explode(' ', $woordenlijst);
 
+$longestWordLength = 0;
+$longestWord = '';
+
+foreach ($words as $word) {
+   if (strlen($word) > $longestWordLength) {
+      $longestWordLength = strlen($word);
+      $longestWord = $word;
+   }
 }
 
+echo $longestWord;
 
 
 
-$woordenlijst = ['kat', 'hond', 'olifant']
+
+
     ?>
 
 </body>
