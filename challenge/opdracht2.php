@@ -6,22 +6,17 @@
 $woordenlijst = "kat hond olifant";
 $words  = explode(' ', $woordenlijst);
 
-$longestWordLength = 0;
-$longestWord = '';
+$langstewoordlengte = 0;
+$langstewoord = '';
 
 foreach ($words as $word) {
-   if (strlen($word) > $longestWordLength) {
-      $longestWordLength = strlen($word);
-      $longestWord = $word;
+   if (strlen($word) > $langstewoordlengte) {
+      $langstewoordlengte = strlen($word);
+      $langstewoord = $word;
    }
 }
 
-echo $longestWord;
-
-
-
-
-
+echo $langstewoord;
     ?>
 
 </body>
