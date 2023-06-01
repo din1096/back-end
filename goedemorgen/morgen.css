@@ -1,0 +1,20 @@
+body {
+   
+
+    background-size: cover;
+}
+
+
+
+.morning{
+    background-image: url('background/.morning.png');
+}
+.evening{
+    background-image: url(background/.evening.png);
+}
+.afternoon {
+    background-image: url(background/.afternoon.png);
+}
+.night{
+    background-image: url(background/.night.png);
+}
