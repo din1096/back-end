@@ -1,8 +1,8 @@
 <html>
 <body>
 
-Naam <?php echo $_GET["name"]; ?><br>
- email address : <?php echo $_GET["email"]; ?>
+Naam <?php echo $_POST["name"]; ?><br>
+ email address : <?php echo $_POST["email"]; ?>
 
 </body>
 </html>
