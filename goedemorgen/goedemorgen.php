@@ -20,7 +20,7 @@
         $url = 'night.png';
     }
     '</div>';
-    echo "<div id = 'tijd'>";
+    echo "<div id = 'vandaag'>";
     echo 'het is nu';
     echo $vandaag;
     '</div>';
