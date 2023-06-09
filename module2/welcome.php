@@ -1,6 +1,9 @@
 <!DOCTYPE HTML>  
 <html>
 <head>
+<style>
+.error {color: #FF0000;}
+</style>
 </head>
 <body>  
 
@@ -38,8 +41,10 @@ function test_input($data) {
 <h2>de volgende gegevens zijn:</h2>
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
   Name: <input type="text" name="name">
+  <span class="error">* <?php echo $nameErr;?></span>
   <br><br>
   E-mail: <input type="text" name="email">
+  <span class="error">* <?php echo $emailErr;?></span>
   <br><br>
   <input type="submit">
  
