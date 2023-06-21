@@ -14,7 +14,7 @@ $name = $email = "";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($_POST["name"])) {
         $nameErr = "Name is required";
-    } else  {
+    } else {
         $name = test_input($_POST["name"]);
     }
     if (empty($_POST["email"])) {
@@ -51,7 +51,6 @@ function test_input($data) {
 </form>
 
 <?php
-
 echo $name;
 echo "<br>";
 echo $email;
