@@ -1,0 +1,38 @@
+.error {color: #FF0000;}
+.background {
+    background-color: black;
+}
+
+#big{
+    font-size: 20px;
+}
+footer {
+    text-align: center;
+    padding: 3px;
+    color: white;
+}
+
+h1{
+    margin-left: 250px;
+    font-family: impact;
+    color: white;
+    font-size: 60px;
+    
+}
+ul {
+    list-style-type: none;
+    margin-left: 250px;
+    margin-right: 520px;
+    padding: 0;
+    overflow: hidden;
+    background-color: red;
+}
+
+.tekst {
+    background-color: white;
+    width: 650px;
+    padding: 50px;
+    margin: 20px;
+    margin-left: 250px;
+}
+
