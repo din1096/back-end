@@ -3,7 +3,8 @@
 <?php
 include 'variables.php';
 echo $naam;
-echo $my_array;
+echo "<br>";
+echo $woordenlijst;
 ?>
 
 

@@ -1,0 +1,5 @@
+<?php
+$naam = 'dinho hooi';
+
+
+?>  
