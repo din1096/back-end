@@ -8,7 +8,7 @@
 <body>
    <h1>alle playlist op het scherm</h1>
    
-
+   <form action"/playlist/addsong" method
    
 </body>
 </html>
