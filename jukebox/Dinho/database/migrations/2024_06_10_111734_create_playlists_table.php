@@ -11,17 +11,18 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('genres', function (Blueprint $table) {
-            $table->increments("id");
-            $table->String("name");
+        Schema::create('playlists', function (Blueprint $table) {
+            $table->id();
+            $table->description();
+            $table->timestamps();
         });
     }
 
-    /** 
+    /**
      * Reverse the migrations.
      */
     public function down(): void
     {
-        Schema::dropIfExists('genres');
+        Schema::dropIfExists('playlists');
     }
 };
