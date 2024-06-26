@@ -11,5 +11,4 @@ Route::get("/hello", [welcome::class, "hello"]);
 Route::get("/Song",); 
 Route::get("/playlist/all");
 Route::get("/playlist");
-Route::get("/playlist/view/{playlist}")
-Route::post("/playlist/addsong{Playlistcontroller}")
+Route::get("/playlist/view/{playlist}");

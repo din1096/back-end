@@ -2,8 +2,15 @@
 $fout1 = $fout2 = $fout3 = $fout4 = $fout5 = $fout6 = $fout7 = "";
 $p1 = $p2 = $p3 = $p4 = $p5 = $p6 = $p7 = "";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $errors = false;
     foreach($_POST as $key => $value){
-        if(empty($key)) echo"answer is required";
+        if(empty($value)){
+            $errors = true;
+            echo "Andwoord " . $key . " is required.<br>";
+        }
+    }
+    if($errors){
+        echo "full alle velden in.";
     }
 }
  
@@ -14,7 +21,7 @@ function test_input($data) {
     return $data;
 }
  
-if (isset($_POST['submit'])){
+if (isset($_POST['submit']) && !$errors){
     echo "Er zijn veel mensen die niet kunnen " . $_POST["p1"] . ". Mensen zoals " . $_POST["p2"] . ". Zelfs met de hulp van een " . $_POST["p4"] . " of zelfs " . $_POST["p3"] . " kan " . $_POST["p2"] . " niet " . $_POST["p1"] . ". Dit heeft niet te maken met gebrek aan " . $_POST["p5"] . ", maar met een te veel aan " . $_POST["p6"] . ". Te veel " . $_POST["p6"] . " leidt tot " . $_POST["p7"] . " en dat is niet goed als je wilt " . $_POST["p1"] . ". Helaas voor " . $_POST["p2"] . ".";
 }
 ?>
@@ -27,9 +34,9 @@ if (isset($_POST['submit'])){
 </head>
 <body class="background">
     <h1 class="text">Mad Libs</h1>
-
  
-    <form class="tekst" method="post" action="resultaatonkunde.php">  
+ 
+    <form class="tekst" method="post" action="">  
         Wat zou je graag willen kunnen? <input type="text" name="p1">
         <span>* <?php echo $fout1;?></span>
         <br><br>
