@@ -2,7 +2,6 @@
 <html lang="nl">
 <head>
     <title>Mad Libs</title>
-    <link rel="stylesheet" href="stylesheet.css">
 </head>
 <head>
     <body class="background">
